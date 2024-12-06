@@ -1,0 +1,171 @@
+/* Movie Detail Section */
+.movie-detail {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    background-color: var(--dark-lighten);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    max-width: 1100px;
+    border-radius: 8px;
+}
+
+/* Header styling for movie image */
+.movie-header {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.movie-header img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Movie Info Styling */
+.movie-info {
+    margin-top: 20px;
+    text-align: center;
+    max-width: 800px;
+    width: 100%;
+}
+
+.movie-info p {
+    margin: 10px 0;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.movie-info .btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 25px;
+    background-color: #f44336;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+}
+
+.movie-info .btn:hover {
+    background-color: #d32f2f;
+}
+
+/* Trailer Section */
+.movie-trailer {
+    margin-top: 30px;
+    width: 100%;
+    max-width: 1000px;
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.movie-trailer iframe {
+    width: 100%;
+    height: 500px;
+    border: none;
+}
+
+/* Style cho form bình luận */
+#comment-form-container {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: var(--dark-lighten);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    max-width: 800px;
+    width: 100%;
+}
+
+#comment-text {
+    font-size: 1rem;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    resize: none;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+#submit-comment {
+    background-color: #f44336;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    border: none;
+}
+
+#submit-comment:hover {
+    background-color: #d32f2f;
+}
+
+/* Style cho từng bình luận */
+.comment {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.comment-author {
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+.comment-text {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #555;
+}
+
+
+/* Flexbox for Comments and Similar Movies */
+/* Style cho Similar Movies */
+#similar {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: var(--dark-darken);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#similar h3 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+#similar-movies-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.similar-movie {
+    width: 180px;
+    text-align: center;
+}
+
+.similar-movie img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.similar-movie p {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #333;
+    text-transform: capitalize;
+}

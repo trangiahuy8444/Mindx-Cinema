@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Detail</title>
+    <link rel="stylesheet" href="../css/watch.css">
+    <link rel="stylesheet" href="../css/base.css">
+</head>
+
+<body>
+    <main>
+        <div style="flex-grow: 1">
+            <div class="movie-detail">
+                <div class="movie-info">
+                    <p id="movie-title">Movie Title</p>
+                    <p id="movie-description">Movie description goes here...</p>
+                    <p id="release-date">Release Date: 2024-12-06</p>
+                </div>
+
+                <div class="movie-trailer">
+                    <iframe id="movie-player" title="Movie Trailer" frameborder="0" allowfullscreen></iframe>
+                </div>
+
+                <!-- Comment Form -->
+                <div id="comment-form-container">
+                    <h3>Leave a Comment</h3>
+                    <textarea id="comment-text" placeholder="Write your comment here..." rows="4"
+                        style="width: 100%;"></textarea>
+                    <button id="submit-comment" class="btn">Submit Comment</button>
+                </div>
+
+                <!-- List of Comments -->
+                <div id="comments" class="d-flex flex-column align-items-stretch gap-3">
+                    <!-- Các bình luận sẽ được thêm vào đây -->
+                </div>
+            </div>
+
+            <!-- Similar Movies Section -->
+            <div id="similar">
+                <h3>Similar Movies</h3>
+                <div id="similar-movies-list" class="d-flex flex-wrap gap-3">
+                    <!-- Các phim tương tự sẽ được hiển thị ở đây -->
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="../js/watch.js"></script>
+</body>
+
+</html>
